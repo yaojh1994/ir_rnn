@@ -1,0 +1,83 @@
+Traceback (most recent call last):
+  File "/home/yaojiahui/anaconda2/bin/tensorboard", line 7, in <module>
+    from tensorflow.tensorboard.tensorboard import main
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/tensorflow/__init__.py", line 24, in <module>
+    from tensorflow.python import *
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/tensorflow/python/__init__.py", line 72, in <module>
+    from tensorflow.python.ops.standard_ops import *
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/standard_ops.py", line 53, in <module>
+    from tensorflow.python.ops.gradients import *
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/gradients.py", line 22, in <module>
+    from tensorflow.python.ops.gradients_impl import AggregationMethod
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/gradients_impl.py", line 40, in <module>
+    from tensorflow.python.ops import image_grad  # pylint: disable=unused-import
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/image_grad.py", line 24, in <module>
+    from tensorflow.python.ops import gen_image_ops
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/gen_image_ops.py", line 2041, in <module>
+    _op_def_lib = _InitOpDefLibrary()
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/gen_image_ops.py", line 1031, in _InitOpDefLibrary
+    _text_format.Merge(_InitOpDefLibrary.op_list_ascii, op_list)
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 481, in Merge
+    descriptor_pool=descriptor_pool)
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 535, in MergeLines
+    return parser.MergeLines(lines, message)
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 568, in MergeLines
+    self._ParseOrMerge(lines, message)
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 583, in _ParseOrMerge
+    self._MergeField(tokenizer, message)
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 684, in _MergeField
+    merger(tokenizer, message, field)
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 773, in _MergeMessageField
+    self._MergeField(tokenizer, sub_message)
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 684, in _MergeField
+    merger(tokenizer, message, field)
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 773, in _MergeMessageField
+    self._MergeField(tokenizer, sub_message)
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 671, in _MergeField
+    tokenizer.Consume(':')
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 1025, in Consume
+    if not self.TryConsume(token):
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 1012, in TryConsume
+    self.NextToken()
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 1255, in NextToken
+    self._SkipWhitespace()
+  File "/home/yaojiahui/anaconda2/lib/python2.7/site-packages/google/protobuf/text_format.py", line 996, in _SkipWhitespace
+    match = self._whitespace_pattern.match(self._current_line, self._column)
+KeyboardInterrupt
+Starting TensorBoard 54 at http://hpc:6006
+(Press CTRL+C to quit)
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one metagraph event per run. Overwriting the metagraph with the newest event.
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one metagraph event per run. Overwriting the metagraph with the newest event.
+ERROR:tensorflow:Unable to get size of /home/ipython/yaojiahui/My_Tensorflow/logs/ir/ir_test/events.out.tfevents.1509762888.hpc: /home/ipython/yaojiahui/My_Tensorflow/logs/ir/ir_test/events.out.tfevents.1509762888.hpc
+ERROR:tensorflow:Unable to get size of /home/ipython/yaojiahui/My_Tensorflow/logs/ir/ir_train/events.out.tfevents.1509762888.hpc: /home/ipython/yaojiahui/My_Tensorflow/logs/ir/ir_train/events.out.tfevents.1509762888.hpc
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one metagraph event per run. Overwriting the metagraph with the newest event.
+ERROR:tensorflow:Unable to get size of /home/ipython/yaojiahui/My_Tensorflow/logs/ir/ir_test/events.out.tfevents.1509763373.hpc: /home/ipython/yaojiahui/My_Tensorflow/logs/ir/ir_test/events.out.tfevents.1509763373.hpc
+ERROR:tensorflow:Unable to get size of /home/ipython/yaojiahui/My_Tensorflow/logs/ir/ir_train/events.out.tfevents.1509763372.hpc: /home/ipython/yaojiahui/My_Tensorflow/logs/ir/ir_train/events.out.tfevents.1509763372.hpc
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one metagraph event per run. Overwriting the metagraph with the newest event.
+ERROR:tensorflow:TensorBoard attempted to bind to port 6006, but it was already in use
+TensorBoard attempted to bind to port 6006, but it was already in use
+Starting TensorBoard 54 at http://hpc:6006
+(Press CTRL+C to quit)
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one metagraph event per run. Overwriting the metagraph with the newest event.
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one metagraph event per run. Overwriting the metagraph with the newest event.
+Starting TensorBoard 54 at http://hpc:6006
+(Press CTRL+C to quit)
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one metagraph event per run. Overwriting the metagraph with the newest event.
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one metagraph event per run. Overwriting the metagraph with the newest event.
+ERROR:tensorflow:TensorBoard attempted to bind to port 6006, but it was already in use
+TensorBoard attempted to bind to port 6006, but it was already in use
+Starting TensorBoard 54 at http://hpc:6006
+(Press CTRL+C to quit)
+No handlers could be found for logger "werkzeug"
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one metagraph event per run. Overwriting the metagraph with the newest event.
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one metagraph event per run. Overwriting the metagraph with the newest event.
